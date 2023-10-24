@@ -5,7 +5,7 @@
 
 <h1>Register</h1>
 
-<form method="POST" action="">
+<form method="POST" action="{% url 'home' %}">
     {% csrf_token %}
     {% if form.errors %}
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -23,7 +23,7 @@
 
     <br/>
     <button type="Login" class="btn btn-secondary">Register</button>
-
+</form>
 
 </div>
 
